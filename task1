@@ -1,0 +1,15 @@
+class Solution1 {
+    func sortedSquares(_ A: [Int]) -> [Int] {
+        
+        var listt = [Int]()
+        var numbers = [Int]()
+        numbers = A
+        for i in numbers{
+            listt.append(i*i)
+        }
+        
+        listt.sort()
+        return listt
+        
+    }
+}
