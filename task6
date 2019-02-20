@@ -1,0 +1,18 @@
+class Solution6 {
+    func moveZeroes(_ nums: inout [Int]) {
+        var listt1 = [Int]()
+        listt1 = nums
+        var listt2 = [Int]()
+        var listtf0 = [Int]()
+        var listtf = [Int]()
+        listt1.sort()
+        for i in listt1{
+            if(i == 0){
+                listtf0.append(i)
+            }else{
+                listt2.append(i)
+            }
+        }
+        listtf = listt2 + listtf0
+    }
+}
