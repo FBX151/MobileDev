@@ -1,0 +1,17 @@
+class Solution3 {
+    func flipAndInvertImage(_ A: [[Int]]) -> [[Int]] {
+        var listt = [[Int]]()
+        for i in A {
+            var a = [Int]()
+            var b = i
+            b.reverse()
+            for j in b{
+                a.append(1 - j)
+            }
+            listt.append(a)
+        }
+        return listt
+        
+    }
+    
+}
