@@ -1,0 +1,16 @@
+class Solution5 {
+    func arrayPairSum(_ nums: [Int]) -> Int {
+        var listt1 = [Int] ()
+        listt1 = nums
+        listt1.sort()
+        
+        var res = 0
+        var i=0
+        while(i<=listt1.count-1)
+        {
+            res+=listt1[i]
+            i+=2
+        }
+        return res
+    }
+}
