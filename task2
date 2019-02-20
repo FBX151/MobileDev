@@ -1,0 +1,18 @@
+
+class Solution2 {
+    func sortArrayByParity(_ A: [Int]) -> [Int] {
+        var listt = [Int]()
+        var listt2 = [Int]()
+        var listf = [Int]()
+        for i in A {
+            if(i % 2 == 0){
+                listt.append(i)
+            }
+            else{
+                listt2.append(i)
+            }
+        }
+        listf = listt + listt2
+        return listf
+    }
+}
